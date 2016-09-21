@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="application/javascript" src="js/angular.min.js"></script>
+    <script type="application/javascript" src="js/controller.js"></script>
+</head>
+
+<body ng-controller="AppCtrl">
+    <div class="page-header">
+        <h2>Chapter 1 <small>Hello, World</small></h2>
+    </div>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Hello, {{name}}</h1>
+            <label for="name">Enter Your Name</label>
+            <input type="text" ng-model="name" class="form-control input-lg" id="name">
+        </div>
+    </div>
+</body>
+</html>

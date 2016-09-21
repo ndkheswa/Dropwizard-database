@@ -1,0 +1,18 @@
+# Database settings.
+database:
+    # the name of the JDBC driver, mysql in our case
+    driverClass: com.mysql.jdbc.Driver
+    # the username
+    user: username
+    # the password
+    password: *********
+    # the JDBC URL; the database is called ecommerce
+    url: jdbc:mysql://localhost:3306/ecommerce
+server:
+  type: simple
+  applicationContextPath: /
+  connector:
+    type: http
+    port: 9999
+swagger:
+  resourcePackage: com.example.ecommerce.api.Customer
